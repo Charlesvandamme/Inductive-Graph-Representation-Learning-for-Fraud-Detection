@@ -7,23 +7,22 @@ Graphs can be seen as a universal language to describe and model a diverse set o
 # Experimental Pipeline
 <img src="https://github.com/Charlesvandamme/Inductive-Graph-Representation-Learning-for-Fraud-Detection/blob/master/Figures/experimental_pipeline.JPG?raw=true"/>
 
-### Transaction Data ###
+### 1. Transaction Data ###
 Any dataset that can be transformed into a graph can be used in our experimental setup. For our research, we used a real-life dataset to construct credit card transaction networks containing millions of transactions. This dataset includes information on the following features: anonymized identification of clients and merchants, merchant category code, country, monetary amount, time, acceptance, and fraud label. This real-life dataset is highly imbalanced and contains only 0.65% fraudulent transactions.
 
-### Pre-Processing ###
-
+### 2. Pre-Processing ###
 The second step in the pipeline is transforming the input data into a compatible format for the downstream graph representation learning algorithms. Specifically, the features needed to be transformed into a numeric format. The `pre-processing` code specifies the transformations for our transaction data. 
 
-### Graph Construction ###
+### 3. Graph Construction ###
 The `Graph Construction` code constructs the graphs that will be used by graph representation learners (e.g. FI-GRL and GraphSAGE) to learn node embeddings. We designed the credit card transaction networks as heterogeneous tripartite graphs containing client, merchant and transaction nodes. Because of this tripartite setup, representations can be learned for the transaction nodes. Only the transaction nodes are configured with node features. 
 
-### GraphSAGE ###
+### 4. GraphSAGE ###
 
 The `GraphSAGE` code deploys a supervised, heterogeneous implementation of the GraphSAGE framework, to learn embeddings of the transaction nodes in the aforementioned graphs. 
 
-### FI-GRL ###
+### 5. FI-GRL ###
 
 The `FI-GRL` code learns embeddings of the transaction nodes in the aforementioned graphs using the Fast Inductive Graph Representation Learning Framework.
 
-### Classifier ###
+### 6. Classifier ###
 The `Classifier` code uses the transaction node embeddings to classify the transaction nodes as fraudulent or legitimate, our experiments deployed XGBoost. 
