@@ -20,7 +20,11 @@ The `Graph Construction` code constructs the graphs that will be used by graph r
 The `GraphSAGE` code deploys a supervised, heterogeneous implementation of the GraphSAGE framework, to learn embeddings of the transaction nodes in the aforementioned graphs. 
 
 ### 5. FI-GRL ###
-The `FI-GRL` code learns embeddings of the transaction nodes in the aforementioned graphs using the Fast Inductive Graph Representation Learning Framework.
+The `FI-GRL` code learns embeddings of the transaction nodes in the aforementioned graphs using the Fast Inductive Graph Representation Learning Framework. We call the Matlab implementation of FI-GRL from our Jupyter notebooks, which requires an appropriate installation of matlab.engine in the same folder as the notebooks. If you wish to run FI-GRL from Python, please run the following command in Matlab:
+
+`cd (fullfile(matlabroot,'extern','engines','python'))`\
+`system('python setup.py install')`
+
 
 ### 6. Classifier ###
 The penultimate component in our pipeline uses the transaction node embeddings to classify the transaction nodes as fraudulent or legitimate. We chose to rely on XGBoost as a classification model, but other classifiers can easily be implemented. 
