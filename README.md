@@ -25,6 +25,7 @@ The `FI-GRL` code learns embeddings of the transaction nodes in the aforemention
 `cd (fullfile(matlabroot,'extern','engines','python'))`\
 `system('python setup.py install')`
 
+This will generate a folder in matlabroot\extern\engines\python\build\lib called 'matlab' please copy this folder and place it on the same location as the notebook from which you want to call matlab.engine. If you don't know your matlab root, running 'matlabroot' in Matlab will return the appropriate path.
 
 ### 6. Classifier ###
 The penultimate component in our pipeline uses the transaction node embeddings to classify the transaction nodes as fraudulent or legitimate. We chose to rely on XGBoost as a classification model, but other classifiers can easily be implemented. 
