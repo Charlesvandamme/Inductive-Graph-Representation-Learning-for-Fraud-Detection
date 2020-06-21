@@ -12,14 +12,14 @@ Graphs can be seen as a universal language to describe and model a diverse set o
 ### 1. Transaction Data ###
 Any dataset that can be transformed into a graph can be used in our experimental setup. For our research, we used a real-life dataset to construct credit card transaction networks containing millions of transactions. This dataset includes information on the following features: anonymized identification of clients and merchants, merchant category code, country, monetary amount, time, acceptance, and fraud label. This real-life dataset is highly imbalanced and contains only 0.65% fraudulent transactions. Note that the demo data in this repository is an anonymized version.
 
-### 3. Graph Construction ###
+### 2. Graph Construction ###
 The `Graph Construction` code constructs the graphs that will be used by graph representation learners (e.g. FI-GRL and GraphSAGE) to learn node embeddings. We designed the credit card transaction networks as heterogeneous tripartite graphs containing client, merchant and transaction nodes. Because of this tripartite setup, representations can be learned for the transaction nodes. Only the transaction nodes are configured with node features. 
 
-### 4. GraphSAGE ###
+### 3. GraphSAGE ###
 
 The `GraphSAGE` code deploys a supervised, heterogeneous implementation of the GraphSAGE framework, to learn embeddings of the transaction nodes in the aforementioned graphs. 
 
-### 5. FI-GRL ###
+### 4. FI-GRL ###
 The `FI-GRL` code learns embeddings of the transaction nodes in the aforementioned graphs using the Fast Inductive Graph Representation Learning Framework. We call the Matlab implementation of FI-GRL from our Jupyter notebooks, which requires an appropriate installation of matlab.engine in the same folder as the notebooks. If you wish to run FI-GRL from Python, please run the following command in Matlab:
 
 `cd (fullfile(matlabroot,'extern','engines','python'))`\
@@ -27,5 +27,5 @@ The `FI-GRL` code learns embeddings of the transaction nodes in the aforemention
 
 This will generate a folder in matlabroot\extern\engines\python\build\lib called 'matlab' please copy this folder and place it on the same location as the notebook from which you want to call matlab.engine. If you don't know your matlab root, running 'matlabroot' in Matlab will return the appropriate path.
 
-### 6. Classifier ###
+### 5. Classifier ###
 The penultimate component in our pipeline uses the transaction node embeddings to classify the transaction nodes as fraudulent or legitimate. We chose to rely on XGBoost as a classification model, but other classifiers can easily be implemented. 
