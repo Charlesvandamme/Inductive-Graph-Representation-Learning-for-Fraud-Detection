@@ -76,14 +76,11 @@ class Evaluation:
         """
         probs = self.probabilities[:, 1]
         precision, recall, _ = precision_recall_curve(self.labels, probs)
-        #no_skill = (self.labels.value_counts()[1]/(self.labels.value_counts()[0]+self.labels.value_counts()[1]))
-        #pyplot.plot([0, 1], [no_skill, no_skill], linestyle='--', label='Majority classifier')
         pyplot.plot(recall, precision, label=self.name)
         # axis labels
         pyplot.xlabel('Recall')
         pyplot.ylabel('Precision')
         # show the legend
         pyplot.legend()
-        # show the plot
         
         print('Average precision-recall score for ', self.name, ' configuration XGBoost: {0:0.10f}'.format(average_precision_score(self.labels, probs)))
