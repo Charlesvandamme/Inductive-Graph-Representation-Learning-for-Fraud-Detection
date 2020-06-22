@@ -38,5 +38,5 @@ This will generate a folder in matlabroot\extern\engines\python\build\lib called
 ### 5. Classifier ###
 The penultimate component in our pipeline uses the transaction node embeddings to classify the transaction nodes as fraudulent or legitimate. We chose to rely on XGBoost as a classification model, but other classifiers can easily be implemented. 
 
-### 6. Classifier ###
+### 6. Evaluation ###
 The `Evaluation` component contains functions for the Lift score, Lift curve and precision-recall curve. We focused on these evaluation metrics given the highly imbalanced nature of our dataset. However, this code can easily be extended to contain other evaluation metrics such as ROC plots. 
