@@ -7,7 +7,8 @@ The implementation of our components can easily be extended with other functions
 
 All required components for the demo notebooks can be installed via pip:
 `pip install inductiveGRL`
-As an alternative you can build this repository from source by cloning this repository
+
+Alternatively you can build this repository from source by cloning this repository
 and subsequently running `pip install .` inside the cloned repo folder. 
 
 # Abstract
