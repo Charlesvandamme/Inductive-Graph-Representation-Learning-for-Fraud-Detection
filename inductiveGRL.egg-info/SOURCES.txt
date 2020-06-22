@@ -1,0 +1,13 @@
+README.md
+setup.py
+inductiveGRL/__init__.py
+inductiveGRL/evaluation.py
+inductiveGRL/graphconstruction.py
+inductiveGRL/hinsage.py
+inductiveGRL/timeframes.py
+inductiveGRL.egg-info/PKG-INFO
+inductiveGRL.egg-info/SOURCES.txt
+inductiveGRL.egg-info/dependency_links.txt
+inductiveGRL.egg-info/not-zip-safe
+inductiveGRL.egg-info/requires.txt
+inductiveGRL.egg-info/top_level.txt
