@@ -4,7 +4,7 @@ This repository contains the code used in the experimental setup of our paper 'I
 The implementation of our components can easily be extended with other functions to satisfy requirements from other researchers. We've modularised our code into the different pipeline components in the demo folder to encourage others to play with them. The credit card transaction network could for example easily be replaced by other networks to observe the predictive quality of GraphSAGE and FI-GRL embeddings. Our setup also allows to select any machine learning classifier, provided that a Python implementation is available. Lastly, other inductive graph representation learners can easily be plugged into our setup. 
 
 We've loaded the GraphSAGE Demo in Google Colab, which allows to easily run this demonstration:
-[a link](https://colab.research.google.com/drive/1eZsmpdE0e1VKKqryu1LQ-3NHr5eg3msF?usp=sharing)
+[Google Colab GraphSAGE Demo](https://colab.research.google.com/drive/1eZsmpdE0e1VKKqryu1LQ-3NHr5eg3msF?usp=sharing)
 
 # Installation
 
