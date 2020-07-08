@@ -26,10 +26,11 @@ class GraphConstruction:
     
     """
     
-    g_nx = nx.Graph()
+    g_nx = None
     node_features = None
     
     def __init__(self, nodes, edges, features = None):
+        self.g_nx = nx.Graph()
         self.add_nodes(nodes)
         self.add_edges(edges)
         
