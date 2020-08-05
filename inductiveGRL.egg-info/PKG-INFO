@@ -1,10 +1,11 @@
-Metadata-Version: 1.0
+Metadata-Version: 1.1
 Name: inductiveGRL
-Version: 0.1
+Version: 0.2
 Summary: the code used in the experimental setup of our paper 'Inductive Graph Representation Learning for Fraud Detection'.
 Home-page: https://github.com/Charlesvandamme/Inductive-Graph-Representation-Learning-for-Fraud-Detection
 Author: Charles Van Damme
 Author-email: charles.vandamme@student.kuleuven.be
 License: MIT
+Download-URL: https://github.com/rafaelvanbelle/Inductive-Graph-Representation-Learning-for-Fraud-Detection/releases/download/v0.2/inductiveGRL-0.2.tar.gz
 Description: UNKNOWN
 Platform: UNKNOWN
