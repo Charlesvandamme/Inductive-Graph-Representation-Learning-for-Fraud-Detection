@@ -4,7 +4,6 @@ stellargraph
 networkx
 pandas
 numpy
-nbimporter
 scikit-plot
 matplotlib
 sklearn

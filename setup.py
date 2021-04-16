@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(name='inductiveGRL',
-      version='0.1',
+      version='0.2',
       description="the code used in the experimental setup of our paper 'Inductive Graph Representation Learning for Fraud Detection'.",
       url='https://github.com/Charlesvandamme/Inductive-Graph-Representation-Learning-for-Fraud-Detection',
-      download_url='https://github.com/rafaelvanbelle/Inductive-Graph-Representation-Learning-for-Fraud-Detection/releases/download/v0.1/inductiveGRL-0.1.tar.gz',
+      download_url='https://github.com/rafaelvanbelle/Inductive-Graph-Representation-Learning-for-Fraud-Detection/releases/download/v0.2/inductiveGRL-0.2.tar.gz',
       author='Charles Van Damme',
       author_email='charles.vandamme@student.kuleuven.be',
       license='MIT',
