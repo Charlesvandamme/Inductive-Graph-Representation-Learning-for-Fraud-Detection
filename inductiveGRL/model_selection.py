@@ -18,7 +18,7 @@ class TimeBasedFold:
 
         if not isinstance(date_column, DatetimeArray):
             try:
-                date_column = DatetimeArray(datecolumn)
+                date_column = DatetimeArray(date_column)
             except:
                 print("The provided date column cannot be parsed. Please provide a datetime column in pandas DatetimeArray format.")
 
